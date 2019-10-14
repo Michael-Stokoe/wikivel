@@ -11,7 +11,7 @@ class ModelService
      * via a construct method for this to work.
      *
      * @param int|array|mixed $modelIds
-     * @return void
+     * @return \Illuminate\Support\Collection|mixed
      */
     public function getById($modelIds)
     {
@@ -19,13 +19,9 @@ class ModelService
             $modelIds = [$modelIds];
         }
 
-        $modelRecords = collect();
+        $modelRecords = $this->className::whereIn('id', $modelIds)->get();
 
-        foreach ($modelIds as $modelId) {
-            $modelRecords->push($this->className::where('id', $modelId)->first());
-        }
-
-        if (count($modelRecords) > 1) {
+        if ($modelRecords->count() > 1) {
             return $modelRecords;
         }
 
