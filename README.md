@@ -7,6 +7,7 @@ A markdown-based, laravel-powered Wiki system.
 Currently built for a single organisation but plans are being made to allow for multi-tenency.
 
 This project is still very much a work-in-progress but will happily accept Pull Requests and new issues!
+(Definitely don't go into production after some serious testing)
 
 # Current Features
  * Wiki > Space > Page structure (Wiki is a top-level entity in my head, then there are spaces within a wiki, and pages in each space).
