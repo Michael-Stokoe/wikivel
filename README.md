@@ -36,6 +36,8 @@ Run `cp .env.example .env` and `php artisan key:generate`.
 
 Migrate databases with `php artisan migrate`.
 
+Compile the assets by running: `npm run dev` or `npm run prod`.
+
 # Test data
 
 There are some seeds to allow you to fill your wiki with test data.
