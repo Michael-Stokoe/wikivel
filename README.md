@@ -52,7 +52,3 @@ There are some seeds to allow you to fill your wiki with test data.
 If you wish to contribute to the project, I encourage you to fork the project and create some Pull Requests.
 
 Ideally, the planned features would be your first point of call when looking for something to add to the project, but if you have a good idea and think it should be part of Wikivel, feel free to add it and create a PR.
-
-# License
-
-Do what you want. But credit me. That's all I ask!
