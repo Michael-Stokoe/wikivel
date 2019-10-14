@@ -25,6 +25,7 @@ This project is still very much a work-in-progress but will happily accept Pull 
  * Live chat system (A real-time chat application with group chat support)
  * Invite new users
  * Image uploading & storage
+ * Localisation
  
 
 # Installation
