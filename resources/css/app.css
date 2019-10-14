@@ -1,0 +1,96 @@
+@tailwind base;
+
+h1 {
+    @apply text-3xl pb-2;
+    font-weight: 600;
+}
+
+h2 {
+    @apply text-2xl pb-2;
+    font-weight: 600;
+}
+
+h3 {
+    @apply text-xl pb-2;
+    font-weight: 600;
+}
+
+h4 {
+    @apply text-lg pb-2;
+    font-weight: 600;
+}
+
+a {
+    @apply text-blue-600 no-underline;
+}
+
+a:hover {
+    @apply underline;
+}
+
+.btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn:hover {
+    @apply bg-blue-700;
+}
+
+.btn-gray {
+    @apply bg-gray-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-gray:hover {
+    @apply bg-gray-700;
+}
+
+
+label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+input[type="text"] {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+input[type="text"]:focus {
+    @apply outline-none shadow-outline;
+}
+
+textarea {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+textarea:focus {
+    @apply outline-none shadow-outline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.search__container {
+    position: relative;
+}
+
+.search__input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.search__input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.search__glass {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    color: white;
+    opacity: 0;
+}
