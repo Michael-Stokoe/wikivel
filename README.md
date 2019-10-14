@@ -1,3 +1,5 @@
+![WikiVel](https://i.imgur.com/vJ1ILpY.png)
+
 # Wikivel
 
 A markdown-based, laravel-powered Wiki system.
