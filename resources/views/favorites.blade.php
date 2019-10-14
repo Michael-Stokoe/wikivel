@@ -14,13 +14,18 @@ Your Favorites
 
 <div>
     <ul>
-        @foreach ($favorites as $favorite)
-        <li class="py-2">
-            <a href="{{ $favorite[0]->getUrl() }}">{{ $favorite[0]->name }}</a>
-            <span class="px-2 text-gray-500 block sm:inline-flex">
-                {{ substr($favorite[0]->content, 0, 150) . '...' }}
-            </span>
-        </li>
+        @foreach ($favorites as $section => $favorites)
+        <h1>{{ $section }}</h1>
+            @forelse ($favorites as $favorite)
+            <li class="py-2">
+                <a href="{{ $favorite->getUrl() }}">{{ $favorite->name }}</a>
+                <span class="px-2 text-gray-500 block sm:inline-flex">
+                    {{ substr($favorite->content, 0, 150) . '...' }}
+                </span>
+            </li>
+            @empty
+                <li class="py-2">No favorites in this section (yet).</li>
+            @endforelse
         @endforeach
     </ul>
 </div>
