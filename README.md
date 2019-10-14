@@ -21,6 +21,7 @@ This project is still very much a work-in-progress but will happily accept Pull 
 
 # Planned Features
  * Automated tests
+ * Modular plugin system 
  * Live chat system (A real-time chat application with group chat support)
  * Invite new users
  * Image uploading & storage
