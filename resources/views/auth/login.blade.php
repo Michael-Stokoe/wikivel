@@ -18,7 +18,7 @@
                             {{ __('E-Mail Address') }}:
                         </label>
                         {{-- TODO: REMOVE VALUE --}}
-                        <input id="email" type="email" value="superadmin@wiki.app"
+                        <input id="email" type="email" placeholder="superadmin@wiki.app"
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline{{ $errors->has('email') ? ' border-red-500' : '' }}"
                             name="email" value="{{ old('email') }}" required autofocus>
 
@@ -34,7 +34,7 @@
                             {{ __('Password') }}:
                         </label>
                         {{-- TODO: REMOVE VALUE --}}
-                        <input id="password" type="password" value="password"
+                        <input id="password" type="password" placeholder="******"
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline{{ $errors->has('password') ? ' border-red-500' : '' }}"
                             name="password" required>
 
