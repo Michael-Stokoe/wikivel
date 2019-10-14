@@ -32,7 +32,11 @@ This project is still very much a work-in-progress but will happily accept Pull 
 
 Clone the repo, execute `composer install` and `yarn` or `npm install`.
 
-Run `cp .env.example .env` and `php artisan key:generate`.
+Create .env: `cp .env.example .env`.
+
+Generate App key: `php artisan key:generate`.
+
+Compile front-end assets: `npm run dev` or `npm run prod`.
 
 Migrate databases with `php artisan migrate`.
 
