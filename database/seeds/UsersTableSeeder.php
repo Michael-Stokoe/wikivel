@@ -29,7 +29,7 @@ class UsersTableSeeder extends Seeder
                     'name' => $name,
                     'email' => $email,
                     'password' => Hash::make($password),
-                    'display_picture' => $picture ?? null,
+                    'display_picture' => $picture ?? 'default.png',
                 ]
             );
 
