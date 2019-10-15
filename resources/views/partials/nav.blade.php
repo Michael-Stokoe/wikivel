@@ -15,24 +15,28 @@
 
             <div class="text-right ml-6">
                 @guest
-                <a class="text-gray-300 text-sm p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="text-gray-300 text-sm p-3 hover:text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                 @if (Route::has('register'))
-                <a class="text-gray-300 text-sm p-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="text-gray-300 text-sm p-3 hover:text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
                 @endif
 
                 @else
-                <a href="{{ route('favorites.index') }}" class="text-gray-300 text-sm p-3">
+                <a href="{{ route('invite.index') }}" class="text-gray-300 text-sm p-3 hover:no-underline hover:text-white" title="Invite User(s)">
+                    <i class="fas fa-plus"></i>
+                </a>
+
+                <a href="{{ route('favorites.index') }}" class="text-gray-300 text-sm p-3 hover:text-white">
                     Favorites
                 </a>
 
-                <a href="{{ route('wiki.index') }}" class="text-gray-300 text-sm p-3">
+                <a href="{{ route('wiki.index') }}" class="text-gray-300 text-sm p-3 hover:text-white">
                     Wikis
                 </a>
 
                 <a href="{{ route('user.show', ['id' => Auth::id()]) }}"
-                    class="text-gray-300 text-sm p-3">{{ Auth::user()->name }}</a>
+                    class="text-gray-300 text-sm p-3 hover:text-white">{{ Auth::user()->name }}</a>
 
-                <a href="{{ route('logout') }}" class="text-gray-300 text-sm p-3" onclick="event.preventDefault();
+                <a href="{{ route('logout') }}" class="text-gray-300 text-sm p-3 hover:text-white" onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                     {{ csrf_field() }}

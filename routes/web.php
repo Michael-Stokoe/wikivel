@@ -21,6 +21,10 @@ Route::get('/', 'Web\HomeController@index')->name('home');
 
 Route::post('/search', 'Web\SearchController@search')->name('search');
 
-Route::get('/favorites', 'FavoritesController@index')->name('favorites.index');
+Route::get('/favorites', 'Web\FavoritesController@index')->name('favorites.index');
 
-Route::post('/favorites', 'FavoritesController@toggle')->name('favorites.toggle');
+Route::post('/favorites', 'Web\FavoritesController@toggle')->name('favorites.toggle');
+
+Route::get('/invite', 'Web\InviteController@index')->name('invite.index');
+
+Route::post('/invite', 'Web\InviteController@store')->name('invite.store');
