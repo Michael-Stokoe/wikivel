@@ -13,7 +13,7 @@
             </li>
 
             <li class="py-4">
-                <p class="text-xl font-black">Recent spaces/pages</p>
+                <p class="text-xl font-bold">Recent spaces/pages</p>
             </li>
 
             <li class="py-4">
