@@ -3,13 +3,12 @@
 namespace App\Http\Controllers\Web;
 
 use App\Models\User;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
-use App\Services\WikiService;
 use Illuminate\Support\Carbon;
 use App\Services\ActivityService;
-use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 use Spatie\Activitylog\Models\Activity;
 
 class HomeController extends Controller
@@ -19,8 +18,6 @@ class HomeController extends Controller
 
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -28,17 +25,18 @@ class HomeController extends Controller
         $this->activityLogDays = config('wiki.activity_log.days_to_show');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(WikiService $wikiService, ActivityService $activityService, Request $request)
-    {
-        $user = Auth::user();
+    // Show the Dashboard
 
+    /**
+     * @param ActivityService $activityService
+     * @param Request         $request
+     *
+     * @return Factory|View
+     */
+    public function index(ActivityService $activityService, Request $request)
+    {
         // If there's a user logged in...
-        if ($user) {
+        if (auth()->check()) {
             // Get a full list of recent Activities from the activity log. (Limited the results to 10 for now.)
             $recentActivitiesQuery = Activity::where(
                 'created_at',
@@ -46,8 +44,8 @@ class HomeController extends Controller
                 Carbon::now()->subDays($this->activityLogDays)
             )->orderByDesc('created_at');
 
-
             $activityCount = $recentActivitiesQuery->count();
+
             $recentActivities = $recentActivitiesQuery->paginate($this->recentActivityPageSize);
 
             // Instantiate return array.
@@ -65,7 +63,7 @@ class HomeController extends Controller
         return view('home', [
             'recentActivities' => $recentActivityData,
             'activityCount' => $activityCount,
-            'activityLogDays' => config('wiki.activity_log.days_to_show'),
+            'activityLogDays' => $this->activityLogDays,
             'recentActivityPageSize' => $this->recentActivityPageSize,
             'recentActivityCount' => $activityCount,
             'currentPage' => $request->input('page') ?? 1,

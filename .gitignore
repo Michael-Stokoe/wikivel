@@ -16,3 +16,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .vscode
+_ide_helper_models
+.idea
+.idea/*
+.php_cs.cache

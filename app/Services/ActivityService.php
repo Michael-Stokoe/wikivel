@@ -4,19 +4,20 @@ namespace App\Services;
 
 use App\Models\User;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
 use Spatie\Activitylog\Models\Activity;
 
 class ActivityService
 {
-    public function __construct()
-    { }
-
     /**
      * Builds an array of activity data along with original models for passing to the homepage.
      * (Or anywhere you want a list of recent activities).
+     * @param Activity $recentActivity
+     * @return Collection
      */
     public function buildRecentActivityData(Activity $recentActivity)
     {
+
         // Look for the record that has been changed using this one funky little trick that CS Majors hate...
         $changedRecord = $recentActivity->subject_type::where('id', $recentActivity->subject_id)->first();
 
