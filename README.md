@@ -46,7 +46,7 @@ Migrate databases with `php artisan migrate`.
 
 There are some seeds to allow you to fill your wiki with test data.
 
-`php artisan migrate:fresh --force --seed` is what I've been using for development.
+`php artisan wikivel:demo` is what I've been using for development.
 
 # Developing
 
