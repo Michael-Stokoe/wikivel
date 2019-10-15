@@ -42,6 +42,15 @@ class User extends Authenticatable implements Searchable
     ];
 
     /**
+     * The default attributes that should be stored against the record.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'display_picutre' => 'default.png',
+    ];
+
+    /**
      * Get the index name for the model.
      *
      * @return string
