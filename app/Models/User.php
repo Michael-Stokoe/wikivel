@@ -47,7 +47,7 @@ class User extends Authenticatable implements Searchable
      * @var array
      */
     protected $attributes = [
-        'display_picutre' => 'default.png',
+        'display_picture' => 'default.png',
     ];
 
     /**
