@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-10-03 14:24:08.
+    * Generated on 2019-10-15 20:23:38.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -58,6 +58,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -227,6 +228,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -396,6 +398,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -565,6 +568,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -734,6 +738,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -903,6 +908,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -1072,6 +1078,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,
@@ -1241,6 +1248,7 @@ namespace PHPSTORM_META {
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'cache' => \Illuminate\Cache\CacheManager::class,
         'cache.store' => \Illuminate\Cache\Repository::class,
+        'chat' => \Musonza\Chat\Chat::class,
         'command.activitylog:clean' => \Spatie\Activitylog\CleanActivitylogCommand::class,
         'command.auth.resets.clear' => \Illuminate\Auth\Console\ClearResetsCommand::class,
         'command.backup:clean' => \Spatie\Backup\Commands\CleanupCommand::class,

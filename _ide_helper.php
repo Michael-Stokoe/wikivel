@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 6.0.3 on 2019-10-03 14:24:07.
+ * Generated for Laravel 6.0.3 on 2019-10-15 20:23:38.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -14587,6 +14587,197 @@ namespace Illuminate\Support {
  
 }
 
+namespace Musonza\Chat\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class ChatFacade {
+        
+        /**
+         * Creates a new conversation.
+         *
+         * @param array $participants
+         * @param array $data
+         * @return \Musonza\Chat\Conversation 
+         * @static 
+         */ 
+        public static function createConversation($participants, $data = array())
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->createConversation($participants, $data);
+        }
+        
+        /**
+         * Sets message.
+         *
+         * @param string  | Musonza\Chat\Models\Message $message
+         * @return \Musonza\Chat\MessageService 
+         * @static 
+         */ 
+        public static function message($message)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->message($message);
+        }
+        
+        /**
+         * Gets MessageService.
+         *
+         * @return \Musonza\Chat\MessageService 
+         * @static 
+         */ 
+        public static function messages()
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->messages();
+        }
+        
+        /**
+         * Sets Conversation.
+         *
+         * @param \Musonza\Chat\Conversation $conversation
+         * @return \Musonza\Chat\ConversationService 
+         * @static 
+         */ 
+        public static function conversation($conversation)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->conversation($conversation);
+        }
+        
+        /**
+         * Gets ConversationService.
+         *
+         * @return \Musonza\Chat\ConversationService 
+         * @static 
+         */ 
+        public static function conversations()
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->conversations();
+        }
+        
+        /**
+         * Get unread notifications.
+         *
+         * @return \Musonza\Chat\MessageNotification 
+         * @static 
+         */ 
+        public static function unReadNotifications()
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->unReadNotifications();
+        }
+        
+        /**
+         * Returns the User Model class.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function userModel()
+        {
+                        return \Musonza\Chat\Chat::userModel();
+        }
+        
+        /**
+         * Returns primary key for the User model.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function userModelPrimaryKey()
+        {
+                        return \Musonza\Chat\Chat::userModelPrimaryKey();
+        }
+        
+        /**
+         * Should the messages be broadcasted.
+         *
+         * @return bool 
+         * @static 
+         */ 
+        public static function broadcasts()
+        {
+                        return \Musonza\Chat\Chat::broadcasts();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function sentMessageEvent()
+        {
+                        return \Musonza\Chat\Chat::sentMessageEvent();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function makeThreeOrMoreUsersPublic()
+        {
+                        return \Musonza\Chat\Chat::makeThreeOrMoreUsersPublic();
+        }
+        
+        /**
+         * Sets user.
+         *
+         * @param object $user
+         * @return \Musonza\Chat\Chat 
+         * @static 
+         */ 
+        public static function for($user)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->for($user);
+        }
+        
+        /**
+         * Sets user.
+         *
+         * @param object $user
+         * @return \Musonza\Chat\Chat 
+         * @static 
+         */ 
+        public static function setUser($user)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->setUser($user);
+        }
+        
+        /**
+         * Set Sender.
+         *
+         * @param int $from
+         * @return \Musonza\Chat\Chat 
+         * @static 
+         */ 
+        public static function from($from)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->from($from);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function to($recipient)
+        {
+                        /** @var \Musonza\Chat\Chat $instance */
+                        return $instance->to($recipient);
+        }
+         
+    }
+ 
+}
+
 namespace Barryvdh\Debugbar { 
 
     /**
@@ -18213,6 +18404,8 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class Chat extends \Musonza\Chat\Facades\ChatFacade {}
 
     class Debugbar extends \Barryvdh\Debugbar\Facade {}
 
