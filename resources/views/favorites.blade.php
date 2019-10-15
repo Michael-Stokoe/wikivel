@@ -15,7 +15,7 @@ Your Favorites
 <div>
     <ul>
         @foreach ($favorites as $section => $favorites)
-        <h1>{{ $section }}</h1>
+        <h1>{{ ucwords($section) }}</h1>
             @forelse ($favorites as $favorite)
             <li class="py-2">
                 <a href="{{ $favorite->getUrl() }}">{{ $favorite->name }}</a>
