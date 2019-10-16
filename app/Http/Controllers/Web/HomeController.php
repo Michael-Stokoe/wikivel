@@ -35,10 +35,8 @@ class HomeController extends Controller
      */
     public function index(WikiService $wikiService, ActivityService $activityService, Request $request)
     {
-        $user = Auth::user();
-
         // If there's a user logged in...
-        if ($user) {
+        if (Auth::check()) {
             // Get a full list of recent Activities from the activity log. (Limited the results to 10 for now.)
             $recentActivitiesQuery = Activity::where(
                 'created_at',
