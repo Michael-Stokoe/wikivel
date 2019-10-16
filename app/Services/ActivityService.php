@@ -15,7 +15,7 @@ class ActivityService
      * @param Activity $recentActivity
      * @return Collection
      */
-    public function buildRecentActivityData(Activity $recentActivity)
+    public static function buildRecentActivityData(Activity $recentActivity)
     {
 
         // Look for the record that has been changed using this one funky little trick that CS Majors hate...

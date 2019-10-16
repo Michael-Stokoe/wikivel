@@ -1,5 +1,5 @@
 @php
-    for ($i = 1; $i <= ceil($recentActivityCount / $recentActivityPageSize); ++$i) {
+    for ($i = 1; $i <= ceil($recentActivityCount / config('wiki.recent_activity.page_size')); ++$i) {
         if ($i==$currentPage) {
             echo "<span class=\" px-1\">$i</span>";
         } else {
