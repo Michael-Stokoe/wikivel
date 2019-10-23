@@ -1,8 +1,12 @@
 <p align="center">
 <a href="https://github.com/Stokoe0990/wikivel"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
+</p>
 
+<p align="center">
 <img src="https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png">
+</p>
 
+<p align="center">
 <h1>Wikivel</h1>
 
 A markdown-based, laravel-powered Wiki system.
