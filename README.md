@@ -1,4 +1,4 @@
-[![License](https://github.com/Stokoe0990/wikivel/blob/master/LICENSE)](https://github.com/Stokoe0990/wikivel)
+[![License](https://github.com/Stokoe0990/wikivel/blob/master/license.svg)](https://github.com/Stokoe0990/wikivel)
 
 ![WikiVel](https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png)
 
