@@ -1,16 +1,16 @@
 <p align="center">
-    <a href="https://github.com/Stokoe0990/wikivel"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
+<a href="https://github.com/Stokoe0990/wikivel"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
 
-    <img src="https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png">
+<img src="https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png">
 
-    # Wikivel
+<h1>Wikivel</h1>
 
-    A markdown-based, laravel-powered Wiki system.
+A markdown-based, laravel-powered Wiki system.
 
-    Currently built for a single organisation but plans are being made to allow for multi-tenency.
+Currently built for a single organisation but plans are being made to allow for multi-tenency.
 
-    This project is still very much a work-in-progress but will happily accept Pull Requests and new issues!
-    (Definitely don't go into production until after some serious testing)
+This project is still very much a work-in-progress but will happily accept Pull Requests and new issues!
+(Definitely don't go into production until after some serious testing)
 
 </p>
 
