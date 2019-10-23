@@ -1,3 +1,4 @@
+<p align="center">
 [![License](https://github.com/Stokoe0990/wikivel/blob/master/mit.svg)](https://github.com/Stokoe0990/wikivel)
 
 ![WikiVel](https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png)
@@ -10,6 +11,8 @@ Currently built for a single organisation but plans are being made to allow for 
 
 This project is still very much a work-in-progress but will happily accept Pull Requests and new issues!
 (Definitely don't go into production until after some serious testing)
+
+</p>
 
 # Current Features
  * Wiki > Space > Page structure (Wiki is a top-level entity in my head, then there are spaces within a wiki, and pages in each space).
