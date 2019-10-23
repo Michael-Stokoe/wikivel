@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://github.com/Stokoe0990/wikivel"><img src="https://github.com/Stokoe0990/wikivel/blob/master/mit.svg"></a>
+<a href="https://github.com/Stokoe0990/wikivel"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
 
 ![WikiVel](https://github.com/Stokoe0990/wikivel/blob/master/wikivel.png)
 
